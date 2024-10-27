@@ -1,0 +1,11 @@
+body {
+  background-color: #fff;
+}
+h5 {
+  font-size: 3rem;
+}
+.para {
+  line-height: 1rem;
+  color: rgb(52, 40, 23);
+  font-size: 1.2rem;
+}

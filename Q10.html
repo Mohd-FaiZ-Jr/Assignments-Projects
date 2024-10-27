@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background: url("https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png") no-repeat center;
+            background-size: 200px;
+            background-color: #bd4141;
+        }
+
+        .container {
+            width: 700px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            border-radius: 10px;
+            background-color: #45454599;
+            flex-direction: column;
+            width: fit-content;
+            height: 500px;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            color: white;
+        }
+
+        form label {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .prop {
+            padding: 10px;
+            width: 300px;
+            margin: 5px;
+        }
+
+        #hostel {
+            padding: 8px 16px;
+            padding-left: 16px;
+            padding-left: 4px;
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="registration">
+            <span>
+                <label for="name">Name</label><br>
+                <input class="prop" type="text" placeholder="Enter your full name">
+            </span>
+            <span>
+                <label for="pass">Password</label><br>
+                <input class="prop" type="password" placeholder="Suggest a strong password">
+            </span>
+            <span>
+                <label for="email">Email</label><br>
+                <input class="prop" type="email" placeholder="helloworld@gmail.com">
+            </span>
+            <span>
+                <label for="branch">Choose your branch</label><br>
+                <input type="radio" name="branch" id="one" class="inline">CSE
+                <input type="radio" name="branch" id="two" class="inline">CSIT
+                <input type="radio" name="branch" id="three" class="inline">AI/ML
+            </span>
+            <span>
+                <label for="hostel">Select Room Type</label><br>
+                <select name="hostel" id="hostel">
+                    <option value="ac">AC Room</option>
+                    <option value="non-ac">NON-AC Room</option>
+                </select>
+            </span>
+            <input class="prop" type="submit" value="SUBMIT">
+
+        </form>
+    </div>
+</body>
+
+</html>

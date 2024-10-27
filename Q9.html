@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color:green;
+            color: MintCream;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: Snow;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .item {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .id1 {
+            font-family: Serif;
+            color: blue;
+            font-size: 26px;
+        }
+
+        .id2 {
+            font-family: Sans-serif;
+            color: orange;
+            font-size: 15px;
+        }
+
+        .id3 {
+            font-family: Times New Roman;
+            color:yellow;
+            font-size: 30px;
+        }
+
+        .item:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropbtn">Click Here</button>
+    <div class="dropdown-content">
+        <div class="item id1">Sunflower</div>
+        <div class="item id2">Rose</div>
+        <div class="item id3">Lotus</div>
+    </div>
+</div>
+
+</body>
+
+</html>
