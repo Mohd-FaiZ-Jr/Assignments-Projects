@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#listing").before("<h1>List of Topics Covered</h1>");
+            $("#listing").append("<li>JQuery</li>");
+            $("#listing").prepend("<li>Introduction to Full Stack Development</li>");
+            $("#listing").after("<p>Topics updated</p>");
+        })
+    </script>
+</head>
+
+<body>
+    <ul id="listing">
+        <li>Getting Started with Full Stack</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+
+</html>

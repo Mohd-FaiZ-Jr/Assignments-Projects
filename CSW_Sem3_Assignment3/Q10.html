@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#details').submit((event) => {
+                event.preventDefault();
+
+                if($("#name").val() === ""){
+                    alert("Please enter your name");
+                }
+                if($("#email").val() === ""){
+                    alert("Please enter your email");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <form action="details" id="details">
+        <label for="name">Name: </label>
+        <input type="text" id="name"><br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="emailid" id="email">
+        <input type="submit" value="Submit" id="submitbtn">
+    </form>
+</body>
+
+</html>

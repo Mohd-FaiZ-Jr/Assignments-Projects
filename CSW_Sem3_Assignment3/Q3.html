@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $("div").animate({
+                    width: "400px"
+                }, 2000)
+            })
+            $("#stop").click(function () {
+                $("div").stop()
+            })
+        })
+    </script>
+    <style>
+        #content {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+    <button id="start">Start Animation</button>
+    <button id="stop">Stop Animation</button>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#content").click(function () {
+                $("p").text("Clicked!")
+            })
+            $("#content").dblclick(function () {
+                $("#content").css("background", "orange");
+            })
+            $("#content").mouseenter(function () {
+                $("#content").css("border-color", "green");
+            })
+            $("#content").mouseleave(function () {
+                $("#content").css("border-color", "black");
+            })
+        })
+    </script>
+    <style>
+        #content {
+            background: lightblue;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <big>This is a heading inside the content box.</big>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ea dolorum harum, iste necessitatibus impedit
+            consequuntur iusto ullam ratione quidem perferendis commodi, nostrum natus perspiciatis aperiam enim quas
+            nam debitis!</p>
+    </div>
+</body>
+
+</html>

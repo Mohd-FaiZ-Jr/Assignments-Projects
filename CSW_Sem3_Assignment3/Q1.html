@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#red").click(function () {
+                $("body").css("backgroundColor", "red");
+            })
+            $("#blue").click(function () {
+                $("body").css("backgroundColor", "blue");
+            })
+            $("#green").click(function () {
+                $("body").css("backgroundColor", "green");
+            })
+            $("#hide").click(function () {
+                $("#content").toggle("content");
+            })
+        })
+    </script>
+    <style>
+        .bg {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="bg">
+        <h1>This is a content inside the div</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius totam ut, nesciunt quo vel quibusdam eveniet
+            tempore reprehenderit sint obcaecati sit repellat? Ipsum ea atque dolorum. Aspernatur, aliquid. Nemo amet
+            odit iure eligendi veniam in voluptatibus tempora facilis expedita. Est!</p>
+    </div>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <button id="hide">Hide</button>
+</body>
+
+</html>

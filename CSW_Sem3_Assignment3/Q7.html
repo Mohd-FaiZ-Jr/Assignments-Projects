@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#change").click(function () {
+                $("tr").css("color", "red");
+            })
+            $("#add").click(function () {
+                $("tbody").append(
+                    `<tr>
+                        <td>STARK</td>
+                        <td>F23</td>
+                        <td>MECH</td>
+                    </tr >`);
+            })
+        })
+    </script>
+    <style>
+        table {
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SK</td>
+                <td>2J2</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>SRITISH</td>
+                <td>2J2</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>GOLU</td>
+                <td>2J2</td>
+                <td>CSE</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="add">Add Row</button>
+    <button id="change">Change Color</button>
+</body>
+
+</html>

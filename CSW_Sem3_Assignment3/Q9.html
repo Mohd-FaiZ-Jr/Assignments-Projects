@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".pop-up").css("display", "block");
+            })
+        })
+    </script>
+    <style>
+        .pop-up {
+            width: 300px;
+            height: 300px;
+            background: #000;
+            color: aliceblue;
+            margin: auto;
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Show me!</button>
+    <div class="pop-up">
+        <p>This is a pop-up box!</p>
+    </div>
+</body>
+
+</html>

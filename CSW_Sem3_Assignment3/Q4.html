@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#text").click(function () {
+                alert($("#para").text());
+            })
+            $("#html").click(function () {
+                alert($("body").html());
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p id="para">This is a paragraph to text...</p>
+    <button id="text">Fetch Text</button>
+    <button id="html">Fetch HTML</button>
+</body>
+
+</html>

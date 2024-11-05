@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#remove").click(function () {
+                $("#feedback").val(" ");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid impedit quae numquam dolor
+            quidem
+            voluptas ducimus magni consectetur, ratione voluptatibus nobis sunt aliquam ipsa natus nam enim
+            exercitationem commodi delectus facere temporibus? Aspernatur qui doloribus doloremque delectus quisquam
+            eligendi?</p>
+        <p id="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid impedit quae numquam dolor
+            quidem
+            voluptas ducimus magni consectetur, ratione voluptatibus nobis sunt aliquam ipsa natus nam enim
+            exercitationem commodi delectus facere temporibus? Aspernatur qui doloribus doloremque delectus quisquam
+            eligendi?</p>
+    </div>
+    <textarea name="" id="feedback" cols="30" rows="10" style="resize: none;"></textarea><br><br>
+    <button id="remove">Remove text</button>
+</body>
+
+</html>
